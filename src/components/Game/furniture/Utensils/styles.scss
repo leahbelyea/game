@@ -1,0 +1,40 @@
+.utensils {
+  position: absolute;
+  width: 204px;
+  height: 65px;
+
+  .utensil-rack {
+    background: url(utensils.png);
+    width: 204px;
+    height: 65px;
+    background-size: 204px 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .spoon {
+    background: url(spoon.png);
+    width: 28px;
+    height: 69px;
+    background-size: 28px 69px;
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    z-index: 2;
+
+    &.swinging {
+      transform-origin: 14px 0;
+      animation: swingSpoon 2s;
+    }
+  }
+}
+
+@keyframes swingSpoon {
+  0% { transform: rotate(0); }
+  20% { transform: rotate(30deg); }
+  40% { transform: rotate(-25deg); }
+  60% { transform: rotate(20deg); }
+  80% { transform: rotate(-10deg); }
+  100% { transform: rotate(0); }
+}
