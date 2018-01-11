@@ -1,0 +1,73 @@
+.bottom-drawers {
+  background: url(drawers.png) no-repeat;
+  position: absolute;
+  width: 261px;
+  height: 213px;
+
+  .drawer, .drawer-inside {
+    background: url(drawer.png) no-repeat;
+    width: 129px;
+    height: 90px;
+    background-size: 129px 90px;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #2e2e35;
+
+    &.open {
+      width: 135px;
+      height: 95px;
+      background-size: 135px 95px;
+      z-index: 5;
+    }
+  }
+
+  .left-top {
+    left: 0;
+    top: 11px;
+
+    &.open {
+      left: -3px;
+      top: 31px;
+    }
+  }
+
+  .left-bottom {
+    left: 0;
+    top: 101px;
+
+    &.open {
+      left: -3px;
+      top: 121px;
+    }
+  }
+
+  .right-top {
+    left: 130px;
+    top: 11px;
+
+    &.open {
+      left: 127px;
+      top: 31px;
+    }
+  }
+
+  .right-bottom {
+    left: 130px;
+    top: 101px;
+
+    &.open {
+      left: 127px;
+      top: 121px;
+    }
+  }
+
+  .drawer-inside {
+    background: none;
+    z-index: 0;
+
+    &.open {
+      transform: none;
+    }
+  }
+}

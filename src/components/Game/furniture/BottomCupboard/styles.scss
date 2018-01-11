@@ -1,64 +1,41 @@
 .bottom-cupboard {
+  background: url(cupboard.png) no-repeat;
   position: absolute;
   width: 261px;
   height: 214px;
 
-  .cupboard {
-    background: url(cupboard.png) no-repeat;
-    width: 261px;
-    height: 191px;
+  .door {
     position: absolute;
-    top: 0;
-  }
-
-  .cupboard-door-left, .cupboard-door-left-inside {
-    background: url(door-left.png) no-repeat;
-    width: 134px;
-    height: 180px;
-    background-size: 134px 180px;
-    position: absolute;
-    top: 11px;
-    left: 0;
     z-index: 2;
     transition: all 0.2s ease-in-out;
-    transform-origin: left;
 
     &.open {
       transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
     }
   }
 
-  .cupboard-door-right, .cupboard-door-right-inside {
+  .left {
+    background: url(door-left.png) no-repeat;
+    width: 134px;
+    height: 180px;
+    background-size: 134px 180px;
+    top: 12px;
+    left: 0;
+    transform-origin: left;
+  }
+
+  .right {
     background: url(door-right.png) no-repeat;
     width: 128px;
     height: 180px;
     background-size: 128px 180px;
-    position: absolute;
-    top: 11px;
+    top: 12px;
     right: 0;
-    z-index: 2;
-    transition: all 0.2s ease-in-out;
     transform-origin: right;
-
-    &.open {
-      transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(105deg);
-    }
   }
 
-  .cupboard-feet {
-    background: url(cupboard-feet.png) no-repeat;
-    width: 261px;
-    height: 23px;
+  .inside {
     position: absolute;
-    bottom: 0;
-  }
-
-  .cupboard-door-left-inside, .cupboard-door-right-inside {
     background: none;
-    z-index: 0;
-
-    &.open {
-      transform: none;
-    }
   }
 }

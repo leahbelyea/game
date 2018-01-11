@@ -3,6 +3,7 @@ import './styles.scss';
 import { Counter } from './Counter/';
 import { Room } from './Room/';
 import { BottomCupboard } from './furniture/BottomCupboard/';
+import { BottomDrawers } from './furniture/BottomDrawers/';
 import { TopCupboard } from './furniture/TopCupboard/';
 import { Utensils } from './furniture/Utensils/';
 import { Range } from './furniture/Range/';
@@ -14,16 +15,17 @@ const roomContents = [
   {
     type: 'kitchen',
     furniture: [
-      {type: BottomCupboard, style: {bottom: 30, right: 50}},
-      {type: TopCupboard, style: {top: 0, right: 50}},
-      {type: Utensils, style: {top: 126, right: 79}},
-      {type: Range, style: {left: 20, bottom: 30}},
-      {type: Window, style: {left: 280, top: 0}}
+      {type: BottomCupboard, style: {left: 50, bottom: 30}},
+      {type: TopCupboard, style: {left: 50, top: 0}},
+      {type: Utensils, style: {left: 79, top: 126}},
+      {type: Range, style: {left: 348, bottom: 30}},
+      {type: Window, style: {left: 620, top: 23}},
+      {type: BottomDrawers, style: {left: 620, bottom: 30}}
     ],
     balls: [
-      {left: 760, bottom: 56, zIndex: 1},
-      {left: 34, bottom: 30, zIndex: 1, width: 8, backgroundPosition: 'right'},
-      {left: 634, bottom: 340, zIndex: 1}
+      {left: 280, bottom: 56, zIndex: 1},
+      {left: 361, bottom: 30, zIndex: 1, width: 8, backgroundPosition: 'right'},
+      {left: 95, bottom: 340, zIndex: 1}
     ]
   },
   {
