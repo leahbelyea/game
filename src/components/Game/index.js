@@ -4,6 +4,7 @@ import { Counter } from './Counter/';
 import { Room } from './Room/';
 import { BottomCupboard } from './furniture/BottomCupboard/';
 import { BottomDrawers } from './furniture/BottomDrawers/';
+import { CupboardDrawers } from './furniture/CupboardDrawers/';
 import { TopCupboard } from './furniture/TopCupboard/';
 import { Utensils } from './furniture/Utensils/';
 import { Range } from './furniture/Range/';
@@ -31,7 +32,7 @@ const roomContents = [
   {
     type: 'kitchen',
     furniture: [
-      {type: BottomCupboard, style: {bottom: 30, right: 50}},
+      {type: CupboardDrawers, style: {bottom: 30, right: 50}},
       {type: TopCupboard, style: {top: 0, right: 50}},
       {type: Utensils, style: {top: 126, right: 79}},
       {type: Range, style: {left: 20, bottom: 30}},

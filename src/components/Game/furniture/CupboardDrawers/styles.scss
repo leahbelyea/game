@@ -1,0 +1,84 @@
+.cupboard-drawers {
+  background: url(cupboard-drawers.png) no-repeat;
+  position: absolute;
+  width: 263px;
+  height: 216px;
+
+  .cupboard-door {
+    background: url(cupboard-door.png) no-repeat;
+    background-size: 135px 181px;
+    transform-origin: left;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+
+    &.open {
+      transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+    }
+  }
+
+  .cupboard-door, .cupboard-inside {
+    width: 135px;
+    height: 181px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+  }
+
+  .drawer, .drawer-inside {
+    background: url(drawer.png) no-repeat;
+    width: 127px;
+    height: 45px;
+    background-size: 127px 45px;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #2e2e35;
+
+    &.open {
+      width: 134px;
+      height: 52px;
+      background-size: 134px 52px;
+      z-index: 5;
+    }
+  }
+
+  .drawer-0, .drawer-inside-0 {
+    left: 134px;
+    top: 12px;
+
+    &.open {
+      left: -3px;
+      top: 31px;
+    }
+  }
+
+  .drawer-1, .drawer-inside-1 {
+    left: 134px;
+    top: 57px;
+
+    &.open {
+      left: -3px;
+      top: 35px;
+    }
+  }
+
+  .drawer-2, .drawer-inside-2 {
+    left: 134px;
+    top: 102px;
+
+    &.open {
+      left: -3px;
+      top: 31px;
+    }
+  }
+
+  .drawer-3, .drawer-inside-3 {
+    left: 134px;
+    top: 147px;
+
+    &.open {
+      left: -3px;
+      top: 31px;
+    }
+  }
+}

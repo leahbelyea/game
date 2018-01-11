@@ -65,9 +65,5 @@
   .drawer-inside {
     background: none;
     z-index: 0;
-
-    &.open {
-      transform: none;
-    }
   }
 }
